@@ -91,13 +91,13 @@ public class Main { // File name = Class name
         // USER INPUT
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your name: ");
-        String username = scanner.nextLine();
+        String username = scanner.nextLine(); // read user input string
         System.out.println("Hello, " + username + "!");
         System.out.print("Enter your age: ");
-        int userAge = scanner.nextInt();
+        int userAge = scanner.nextInt(); // read user input integer
         System.out.println("You are " + userAge + " years old.");
         System.out.print("Enter your height: ");
-        double userHeight = scanner.nextDouble();
+        double userHeight = scanner.nextDouble(); // read user input double
         System.out.println("You are " + userHeight + " feet tall.");
         scanner.close();
     }
