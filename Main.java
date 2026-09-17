@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Main { // File name = Class name
     public static void main(String[] args) { // yaha se execution start hota hai
@@ -6,11 +6,11 @@ public class Main { // File name = Class name
         System.out.print("Hello, Rafey!"); // print withoutt new line
 
         // variable declaration
-        String name = "Rafey"; //text
-        int age = 25; //whole nummber
-        double height = 5.9; //decimal numbers
-        boolean isDeveloper = true; //true or false
-        char grade = 'A'; //single character
+        String name = "Rafey"; // text
+        int age = 25; // whole nummber
+        double height = 5.9; // decimal numbers
+        boolean isDeveloper = true; // true or false
+        char grade = 'A'; // single character
 
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
@@ -29,7 +29,7 @@ public class Main { // File name = Class name
 
         // integer division
         int c = 10;
-        int d = 3;  
+        int d = 3;
         System.out.println("Integer Division: " + (c / d)); // Output: 3
 
         // to get decimals
@@ -45,7 +45,7 @@ public class Main { // File name = Class name
         score -= 5; // score = score - 5
         System.out.println("After -= 5: " + score);
 
-        //increment and decrement operators
+        // increment and decrement operators
         int count = 1;
         count++; // count = count + 1
         System.out.println("After increment: " + count);
@@ -67,15 +67,15 @@ public class Main { // File name = Class name
         System.out.println(age == 18); // false - checks if age is equal to 18
         System.out.println(age != 18); // true - checks if age is not equal to 18
 
-        //logical operators
+        // logical operators
         boolean hasLicense = true;
-        System.out.println(hasLicense && age >= 18); // true - both conditons mst be true 
+        System.out.println(hasLicense && age >= 18); // true - both conditons mst be true
         System.out.println(hasLicense || age < 18); // true - at least one condition mst be true
 
         boolean isLoggedIn = false;
         System.out.println(!isLoggedIn); // true - negates the value of isLogged
-        
-        //type casting - ek data to dusre data type me convert karna
+
+        // type casting - ek data to dusre data type me convert karna
 
         // implicit casting - automatic conversion - small => large data type
         double resultt = number;
@@ -89,7 +89,7 @@ public class Main { // File name = Class name
         System.out.println("Decimal Division: " + result); // Output: 3.3333333333333335
 
         // USER INPUT
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
         // System.out.print("Enter your name: ");
         // String username = scanner.nextLine(); // read user input string
         // System.out.println("Hello, " + username + "!");
@@ -113,25 +113,27 @@ public class Main { // File name = Class name
         // System.out.println("Age: " + devAge);
         // System.out.println("City: " + devCity);
         // System.out.println("Experience: " + devExperience + " years");
-        // double experienceAfterOneYear = devExperience + 1; // increment experience by 1 year
-        // System.out.println("Experience after one year: " + experienceAfterOneYear + " years");
-        System.out.print("Enter your name: ");
-        String userName = scanner.nextLine(); // read user input string
-        System.out.print("Enter your basic salary: ");
-        double basicSalary = scanner.nextDouble(); // read user input double
-        System.out.print("Enter your bonus: ");
-        double bonus = scanner.nextDouble(); // read user input double
-        double totalSalary = basicSalary + bonus; // calculate total salary
-        System.out.println("Enter your experience in years: ");
-        double experience = scanner.nextDouble(); // read user input double
-        System.out.println("----- Salary Details -----");
-        System.out.println("Name: " + userName);
-        System.out.println("Experience: " + experience + " years");
-        System.out.println("Basic Salary: " + basicSalary);
-        System.out.println("Bonus: " + bonus);
-        System.out.println("Total Salary: " + totalSalary);
-        double salaryAfterIncrement = totalSalary + (totalSalary * 0.10); // increment salary by 10%
-        System.out.println("Salary after 10% increment: " + salaryAfterIncrement);
-        scanner.close();
+        // double experienceAfterOneYear = devExperience + 1; // increment experience by
+        // 1 year
+        // System.out.println("Experience after one year: " + experienceAfterOneYear + "
+        // years");
+        // System.out.print("Enter your name: ");
+        // String userName = scanner.nextLine(); // read user input string
+        // System.out.print("Enter your basic salary: ");
+        // double basicSalary = scanner.nextDouble(); // read user input double
+        // System.out.print("Enter your bonus: ");
+        // double bonus = scanner.nextDouble(); // read user input double
+        // double totalSalary = basicSalary + bonus; // calculate total salary
+        // System.out.println("Enter your experience in years: ");
+        // double experience = scanner.nextDouble(); // read user input double
+        // System.out.println("----- Salary Details -----");
+        // System.out.println("Name: " + userName);
+        // System.out.println("Experience: " + experience + " years");
+        // System.out.println("Basic Salary: " + basicSalary);
+        // System.out.println("Bonus: " + bonus);
+        // System.out.println("Total Salary: " + totalSalary);
+        // double salaryAfterIncrement = totalSalary + (totalSalary * 0.10); // increment salary by 10%
+        // System.out.println("Salary after 10% increment: " + salaryAfterIncrement);
+        // scanner.close();
     }
 }
