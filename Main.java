@@ -90,15 +90,48 @@ public class Main { // File name = Class name
 
         // USER INPUT
         Scanner scanner = new Scanner(System.in);
+        // System.out.print("Enter your name: ");
+        // String username = scanner.nextLine(); // read user input string
+        // System.out.println("Hello, " + username + "!");
+        // System.out.print("Enter your age: ");
+        // int userAge = scanner.nextInt(); // read user input integer
+        // System.out.println("You are " + userAge + " years old.");
+        // System.out.print("Enter your height: ");
+        // double userHeight = scanner.nextDouble(); // read user input double
+        // System.out.println("You are " + userHeight + " feet tall.");
+        // System.out.println("----- Developer Profile -----");
+        // System.out.print("Enter your name: ");
+        // String devName = scanner.next(); // read user input string
+        // System.out.print("Enter your age: ");
+        // int devAge = scanner.nextInt(); // read user input integer
+        // System.out.print("Enter your city: ");
+        // String devCity = scanner.next(); // read user input string
+        // System.out.print("Enter your experience: ");
+        // double devExperience = scanner.nextDouble(); // read user input double
+        // System.out.println("----- Developer Profile -----");
+        // System.out.println("Name: " + devName);
+        // System.out.println("Age: " + devAge);
+        // System.out.println("City: " + devCity);
+        // System.out.println("Experience: " + devExperience + " years");
+        // double experienceAfterOneYear = devExperience + 1; // increment experience by 1 year
+        // System.out.println("Experience after one year: " + experienceAfterOneYear + " years");
         System.out.print("Enter your name: ");
-        String username = scanner.nextLine(); // read user input string
-        System.out.println("Hello, " + username + "!");
-        System.out.print("Enter your age: ");
-        int userAge = scanner.nextInt(); // read user input integer
-        System.out.println("You are " + userAge + " years old.");
-        System.out.print("Enter your height: ");
-        double userHeight = scanner.nextDouble(); // read user input double
-        System.out.println("You are " + userHeight + " feet tall.");
+        String userName = scanner.nextLine(); // read user input string
+        System.out.print("Enter your basic salary: ");
+        double basicSalary = scanner.nextDouble(); // read user input double
+        System.out.print("Enter your bonus: ");
+        double bonus = scanner.nextDouble(); // read user input double
+        double totalSalary = basicSalary + bonus; // calculate total salary
+        System.out.println("Enter your experience in years: ");
+        double experience = scanner.nextDouble(); // read user input double
+        System.out.println("----- Salary Details -----");
+        System.out.println("Name: " + userName);
+        System.out.println("Experience: " + experience + " years");
+        System.out.println("Basic Salary: " + basicSalary);
+        System.out.println("Bonus: " + bonus);
+        System.out.println("Total Salary: " + totalSalary);
+        double salaryAfterIncrement = totalSalary + (totalSalary * 0.10); // increment salary by 10%
+        System.out.println("Salary after 10% increment: " + salaryAfterIncrement);
         scanner.close();
     }
 }
