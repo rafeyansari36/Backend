@@ -1,4 +1,4 @@
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main { // File name = Class name
     public static void main(String[] args) { // yaha se execution start hota hai
@@ -132,8 +132,76 @@ public class Main { // File name = Class name
         // System.out.println("Basic Salary: " + basicSalary);
         // System.out.println("Bonus: " + bonus);
         // System.out.println("Total Salary: " + totalSalary);
-        // double salaryAfterIncrement = totalSalary + (totalSalary * 0.10); // increment salary by 10%
+        // double salaryAfterIncrement = totalSalary + (totalSalary * 0.10); //
+        // increment salary by 10%
         // System.out.println("Salary after 10% increment: " + salaryAfterIncrement);
         // scanner.close();
+
+        // DAY 2
+
+        int age1 = 25;
+        boolean hasLicense1 = true;
+        if (age1 >= 18 && hasLicense1) {
+            System.out.println("Can drive.");
+        } else {
+            System.out.println("Cannot drive.");
+        }
+
+        boolean isAdmin = true;
+        boolean isManager = false;
+        if (isAdmin || isManager) {
+            System.out.println("Access granted.");
+        } else {
+            System.out.println("Access denied.");
+        }
+
+        int age2 = 25;
+        boolean hasLicense2 = false;
+        if (age2 >= 18) {
+            if (hasLicense2) {
+                System.out.println("Can drive.");
+            } else {
+                System.out.println("Need a license");
+            }
+        } else {
+            System.out.println("Too young.");
+        }
+
+        String resultt1 = age2 >= 18 ? "Adult." : "Minor."; // ternary operator
+        System.out.println(resultt1);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter employee name:");
+        String employeeName = scanner.nextLine();
+        System.out.println("Enter basic salary:");
+        double basicSalary = scanner.nextDouble();
+        System.out.println("Enter experience:");
+        double experience = scanner.nextDouble();
+
+        System.out.println("----- Salary Details -----");
+        System.out.println("Name: " + employeeName);
+        System.out.println("Basic Salary: " + basicSalary);
+        System.out.println("Experience: " + experience + " years");
+        double bonusPercentage = 0.0;
+        if (experience >= 5) {
+            bonusPercentage = 0.20;
+        } else if (experience >= 3) {
+            bonusPercentage = 0.15;
+        } else if (experience >= 1) {
+            bonusPercentage = 0.10;
+        } else {
+            bonusPercentage = 0.05;
+        }
+        System.out.println("Bonus Percentage: " + bonusPercentage * 100 + "%");
+        int bonusAmount = (int) (basicSalary * bonusPercentage);
+        System.out.println("Bonus Amount: " + bonusAmount);
+        int finalSalary = (int) (basicSalary + (basicSalary * bonusPercentage));
+        System.out.println("Final Salary: " + finalSalary);
+        if (finalSalary >= 60000) {
+            System.out.println("Congratulations! Salary crossed 60k");
+        } else {
+            System.out.println("Salary is below 60k");
+        }
+        scanner.close();
     }
 }
