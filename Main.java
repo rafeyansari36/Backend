@@ -170,38 +170,86 @@ public class Main { // File name = Class name
         String resultt1 = age2 >= 18 ? "Adult." : "Minor."; // ternary operator
         System.out.println(resultt1);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter employee name:");
-        String employeeName = scanner.nextLine();
-        System.out.println("Enter basic salary:");
-        double basicSalary = scanner.nextDouble();
-        System.out.println("Enter experience:");
-        double experience = scanner.nextDouble();
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Enter employee name:");
+        // String employeeName = scanner.nextLine();
+        // System.out.println("Enter basic salary:");
+        // double basicSalary = scanner.nextDouble();
+        // System.out.println("Enter experience:");
+        // double experience = scanner.nextDouble();
 
-        System.out.println("----- Salary Details -----");
-        System.out.println("Name: " + employeeName);
-        System.out.println("Basic Salary: " + basicSalary);
-        System.out.println("Experience: " + experience + " years");
-        double bonusPercentage = 0.0;
-        if (experience >= 5) {
-            bonusPercentage = 0.20;
-        } else if (experience >= 3) {
-            bonusPercentage = 0.15;
-        } else if (experience >= 1) {
-            bonusPercentage = 0.10;
-        } else {
-            bonusPercentage = 0.05;
+        // System.out.println("----- Salary Details -----");
+        // System.out.println("Name: " + employeeName);
+        // System.out.println("Basic Salary: " + basicSalary);
+        // System.out.println("Experience: " + experience + " years");
+        // double bonusPercentage = 0.0;
+        // if (experience >= 5) {
+        // bonusPercentage = 0.20;
+        // } else if (experience >= 3) {
+        // bonusPercentage = 0.15;
+        // } else if (experience >= 1) {
+        // bonusPercentage = 0.10;
+        // } else {
+        // bonusPercentage = 0.05;
+        // }
+        // System.out.println("Bonus Percentage: " + bonusPercentage * 100 + "%");
+        // int bonusAmount = (int) (basicSalary * bonusPercentage);
+        // System.out.println("Bonus Amount: " + bonusAmount);
+        // int finalSalary = (int) (basicSalary + (basicSalary * bonusPercentage));
+        // System.out.println("Final Salary: " + finalSalary);
+        // if (finalSalary >= 60000) {
+        // System.out.println("Congratulations! Salary crossed 60k");
+        // } else {
+        // System.out.println("Salary is below 60k");
+        // }
+        // scanner.close();
+
+        int role = 2;
+
+        switch (role) {
+            case 1:
+                System.out.println("Admin");
+                break; // agar break nhi lgaya to fall through hoga means sare cases run hoge
+            case 2:
+                System.out.println("Doctor");
+                break;
+            case 3:
+                System.out.println("Patient");
+                break;
+            case 4:
+                System.out.println("Receptionist");
+                break;
+            default: // jab koi case match na ho
+                System.out.println("Unknown Role");
+                break;
         }
-        System.out.println("Bonus Percentage: " + bonusPercentage * 100 + "%");
-        int bonusAmount = (int) (basicSalary * bonusPercentage);
-        System.out.println("Bonus Amount: " + bonusAmount);
-        int finalSalary = (int) (basicSalary + (basicSalary * bonusPercentage));
-        System.out.println("Final Salary: " + finalSalary);
-        if (finalSalary >= 60000) {
-            System.out.println("Congratulations! Salary crossed 60k");
-        } else {
-            System.out.println("Salary is below 60k");
-        }
-        scanner.close();
+
+        // modern switch can return value also
+        String department = "pharmacy";
+
+        String departmentResult = switch (department) {
+            case "doctor" -> "Doctor Department";
+            case "pharmacy" -> "Pharmacy Department";
+            case "laboratory" -> "Laboratory Department";
+            default -> "Unknown Department";
+        };
+
+        System.out.println(departmentResult);
+
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.print("Enter department number:");
+        // int departmentNumber = scanner.nextInt();
+        // String departmentName = switch (departmentNumber) {
+        // case 1 -> "Doctor";
+        // case 2 -> "Pharmacy";
+        // case 3 -> "Laboratory";
+        // case 4 -> "Reception";
+        // case 5 -> "Billing";
+        // default -> "Invalid department";
+        // };
+        // System.out.println("You selected: " + departmentName);
+        // scanner.close();
+
+        
     }
 }
